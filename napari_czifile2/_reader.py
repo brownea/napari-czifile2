@@ -43,6 +43,9 @@ def reader_function(paths):
                         f.scale_x_um,
                     ),
                     "contrast_limits": contrast_limits,
+                    "metadata": {
+                        "xml": f._metadata_xml,
+                    },
                 }
                 if f.channel_names is not None:
                     if num_scenes == 1:
